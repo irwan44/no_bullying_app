@@ -89,7 +89,7 @@ class MainView extends BaseView<MainController> {
       onClickEmergency();
     },
       backgroundColor: AppColors.error600,
-      child: const Text('Darurat', style: descriptionTextStyle,),
+      child: const Text('Bantuan', style: descriptionTextStyle,),
     );
   }
   @override

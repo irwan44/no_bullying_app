@@ -100,7 +100,13 @@ class ProfileView extends BaseView<ProfileController> {
 
   List<SettingItemWidget> generalSetting(){
     return [
-
+      SettingItemWidget(
+        onTap: (){
+          controller.checkVolunteerStatus();
+        },
+        leading: const Icon(Icons.people_outline_outlined, color: AppColors.primary400,),
+        title: 'Beranda Relawan', subTitle: 'Untuk menemukan relawan terdekat',
+      ),
       SettingItemWidget(
         onTap: ()async{
           if(controller.mainController.userMobile.verified == false){
@@ -143,6 +149,7 @@ class ProfileView extends BaseView<ProfileController> {
   List<SettingItemWidget> itemSetting(){
 
     return [
+
       SettingItemWidget(
         onTap: (){
           WebAppView.push(url: 'assets/raw/tos.html', isLocalFile: true);

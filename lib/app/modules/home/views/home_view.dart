@@ -37,6 +37,7 @@ class HomeView extends BaseView<HomeController> {
     return AppBar(
       leading: null,
       title:  Text('Stop Bullying'),
+      centerTitle: false,
       bottom: TabBar(
         controller: controller.tabController,
         tabs: const [
@@ -531,6 +532,11 @@ class HomeView extends BaseView<HomeController> {
         SizedBox(
           height: 10,
         ),
+        Container(
+          padding: EdgeInsets.all(10),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
         Text(
           'Menu Bantuan',
           style: descriptionTextStyle,
@@ -538,6 +544,8 @@ class HomeView extends BaseView<HomeController> {
         Text(
           'Anda dapat menggunakan Menu Bantuan untuk membantu dalam keadaan darurat',
           style: greyDarkContentTextStyle,
+        ),
+        ],),
         ),
         itemHelp('Relawan', 'ic_volunteer.svg').onTap(() {
           Get.bottomSheet(
@@ -579,16 +587,9 @@ class HomeView extends BaseView<HomeController> {
                       Container(
                         padding: EdgeInsets.only(right: 10, left: 10, top: 10, bottom: 10),
                         decoration: BoxDecoration(
-                          color: AppColors.warning100,
                           borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
-                            BoxShadow(
-                              color: AppColors.success50,
-                              spreadRadius: 2,
-                              blurRadius: 4,
-                              offset: Offset(0, 2), // changes position of shadow
-                            ),
-                          ],
+                          border: Border.all(color: AppColors.success50,),
+
                         ),
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -623,16 +624,9 @@ class HomeView extends BaseView<HomeController> {
                       Container(
                           padding: EdgeInsets.only(right: 10, left: 10, top: 10, bottom: 10),
                           decoration: BoxDecoration(
-                            color: AppColors.info200,
                             borderRadius: BorderRadius.circular(10),
-                            boxShadow: [
-                              BoxShadow(
-                                color: AppColors.info100,
-                                spreadRadius: 2,
-                                blurRadius: 4,
-                                offset: Offset(0, 2), // changes position of shadow
-                              ),
-                            ],
+                            border: Border.all(color: AppColors.info100),
+
                           ),
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -674,7 +668,13 @@ class HomeView extends BaseView<HomeController> {
           );
 
         }),
-        emergencyContact(),
+    Container(
+    padding: EdgeInsets.all(10),
+    child: Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+        emergencyContact(),]
+    ),),
         GridView(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
