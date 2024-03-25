@@ -63,7 +63,7 @@ class Assets {
   static const String imagesKemenkes = 'assets/images/kemenkes.png';
   static const String imagesLauncherIcon = 'assets/images/launcher_icon.png';
   static const String imagesLogoAverin = 'assets/images/logo_averin.png';
-  static const String imagesLogoKreki = 'assets/images/logo_kreki.png';
+  static const String imagesLogoKreki = 'assets/images/logo_kreki.jpeg';
   static const String imagesLogoKreki1 = 'assets/images/logo_kreki1.png';
   static const String imagesLogoKrekiCrop = 'assets/images/logo_kreki_crop.png';
   static const String imagesMitra1 = 'assets/images/Mitra-1.png';

@@ -78,8 +78,8 @@ flutter_icons:
   android: "ic_launcher"
   ios: true
   remove_alpha_ios: true
-  image_path: "assets/images/logo_kreki.png"
-  image_path_ios: "assets/images/logo_kreki.png"
+  image_path: "assets/images/logo_kreki.jpeg"
+  image_path_ios: "assets/images/logo_kreki.jpeg"
   min_sdk_android: 21
 
 flutter:

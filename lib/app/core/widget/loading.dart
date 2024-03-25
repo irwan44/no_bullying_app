@@ -17,11 +17,11 @@ class Loading extends StatelessWidget {
       child: const Center(
         child: ElevatedContainer(
           padding: EdgeInsets.all(AppValues.margin),
-          child: Text('Loading'),
-          // AssetImageView(fileName: 'logo_kreki.png',
-          //   height: AppValues.iconSize_22,
-          //   width: AppValues.iconSize_22,
-          // ),
+          child:
+          AssetImageView(fileName: 'logo_kreki.jpeg',
+            height: AppValues.iconSize_22,
+            width: AppValues.iconSize_22,
+          ),
         ),
       ),
     );

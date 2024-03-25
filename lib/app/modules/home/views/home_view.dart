@@ -699,7 +699,7 @@ class HomeView extends BaseView<HomeController> {
             //   openUrl(
             //       "https://play.google.com/store/apps/details?id=id.sehatpedia.apps&hl=en&gl=US");
             // }),
-            // itemHelp('Informasi', 'logo_kreki.png').onTap(() {
+            // itemHelp('Informasi', 'logo_kreki.jpeg').onTap(() {
             //   Get.toNamed(Routes.INFORMASI_HEKP119);
             // }),
           ],

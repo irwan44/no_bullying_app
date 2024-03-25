@@ -50,7 +50,7 @@ class UtilCall{
   //       isShowMissedCallNotification: true,
   //       ringtonePath: 'system_ringtone_default',
   //       backgroundColor: '#0955fa',
-  //       backgroundUrl: 'assets/images/logo_kreki.png',
+  //       backgroundUrl: 'assets/images/logo_kreki.jpeg',
   //       actionColor: '#4CAF50',
   //     ),
   //     ios: IOSParams(
