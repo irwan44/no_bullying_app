@@ -28,7 +28,7 @@ class SplashView extends BaseView<SplashController> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const AssetImageView(
-              fileName: 'loading.png',
+              fileName: 'stopbullying.jpg',
               fit: BoxFit.contain,
                height: 250,
             ),

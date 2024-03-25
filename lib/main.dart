@@ -28,7 +28,7 @@ void main() async{
   String firstPage = isLogin ? Routes.MAIN : Routes.SIGN_IN;
 
   EnvConfig prodConfig = EnvConfig(
-    appName: "Kreki 119",
+    appName: "Stop Bullying",
     baseUrl: "https://api-apps.kreki119.com/",
     initialPage: firstPage,
     shouldCollectCrashLog: true,
